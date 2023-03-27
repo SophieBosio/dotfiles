@@ -1,5 +1,5 @@
 # Configs
-My personal configurations and preferences for assorted software and systems
+My personal configurations, preferences, dotfiles, etc. for assorted software and systems.
 
 ## Contents
 At time of writing, the config repo contains configurations for the following systems:
