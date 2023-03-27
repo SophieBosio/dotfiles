@@ -1,0 +1,14 @@
+{
+  "includes": {},
+  "cmds": {
+    "afterpage{}": {
+      "snippet": "afterpage{${1:command}}"
+    },
+    "addboxcontents{}": {
+      "snippet": "addboxcontents{${1:contents}}"
+    }
+  },
+  "envs": {},
+  "options": [],
+  "keyvals": []
+}

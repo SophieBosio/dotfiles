@@ -1,0 +1,132 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Elsa",
+	"patterns": [
+		{
+			"include": "#alias-defs"
+		},
+		{
+			"include": "#eval-defs"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#statements"
+		}
+	],
+	"repository": {
+		"alias-defs": {
+			"name": "meta.expr.alias.elsa",
+			"begin": "\\s*(let)\\s*",
+			"beginCaptures": {
+				"1": {
+					"name": "keyword.other.elsa"
+				}
+			},
+			"end": "\n",
+			"patterns": [
+				{
+					"include": "#terms"
+				},
+				{
+					"match": "=",
+					"name": "keyword.operator.equals.elsa"
+				},
+				{
+					"include": "#comments"
+				}
+			]
+		},
+		"eval-defs": {
+			"name": "meta.function.eval.elsa",
+			"begin": "\\s*(eval)\\s*",
+			"beginCaptures": {
+				"1": {
+					"name": "storage.type.eval"
+				}
+			},
+			"end": "\n",
+			"patterns": [
+				{
+					"include": "#variables"
+				}
+			]
+		},
+		"binders": {
+			"begin": "(\\\\)",
+			"beginCaptures": {
+				"1": {
+					"name": "keyword.other.lambda.elsa"
+				}
+			},
+			"end": "(->)",
+			"endCaptures": {
+				"1": {
+					"name": "keyword.control.to.elsa"
+				}
+			},
+			"patterns": [
+				{
+					"include": "#variables"
+				}
+			]
+		},
+		"terms": {
+			"name": "meta.expr.term",
+			"patterns": [
+				{
+					"include": "#binders"
+				},
+				{
+					"include": "#variables"
+				}
+			]
+		},
+		"statements": {
+			"patterns": [
+				{
+					"include": "#derivations"
+				},
+				{
+					"include": "#terms"
+				}
+			]
+		},
+		"derivations": {
+			"patterns": [
+				{
+					"match": "^\\s*=[abd]>",
+					"name": "keyword.other.derive.elsa"
+				},
+				{
+					"match": "^\\s*=[~*]>",
+					"name": "keyword.other.derive.abnormal.elsa"
+				},
+				{
+					"match": "^\\s*=[^abd~*]>",
+					"name": "invalid.deprecated.elsa"
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "constant.character.elsa",
+					"match": "\\b[A-Z0-9_]+\\b"
+				},
+				{
+					"name": "variable.name.elsa",
+					"match": "\\b[a-z0-9_]+\\b"
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.double-dash.elsa",
+			"begin": "--",
+			"end": "(?=\n)",
+			"patterns": []
+		}
+	},
+	"scopeName": "source.elsa"
+}

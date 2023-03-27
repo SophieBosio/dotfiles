@@ -1,0 +1,13 @@
+{
+  "includes": {
+    "graphics": []
+  },
+  "cmds": {},
+  "envs": {
+    "landscape": {}
+  },
+  "options": [
+    "pdftex"
+  ],
+  "keyvals": []
+}

@@ -1,0 +1,62 @@
+{
+	"name": "elsa-lang",
+	"displayName": "Elsa Syntax",
+	"description": "Adds supports for the Elsa language",
+	"author": {
+		"email": "aanand@akainth.me",
+		"name": "Aanand Kainth",
+		"url": "https://akainth.me/"
+	},
+	"publisher": "akainth015",
+	"version": "1.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mistzzt/vscode-elsa-lang"
+	},
+	"engines": {
+		"vscode": "^1.66.0"
+	},
+	"activationEvents": [
+		"onLanguage:elsa"
+	],
+	"main": "extension.js",
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "elsa",
+				"aliases": [
+					"Elsa",
+					"elsa"
+				],
+				"extensions": [
+					".lc"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "elsa",
+				"scopeName": "source.elsa",
+				"path": "./syntaxes/elsa.tmLanguage.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.66.0"
+	},
+	"__metadata": {
+		"id": "6ae5206c-816b-4e28-93b2-4745327a24b3",
+		"publisherId": "b6d75b09-0010-4dd7-b447-807083315799",
+		"publisherDisplayName": "Aanand Kainth",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1676974356416,
+		"preRelease": false
+	}
+}

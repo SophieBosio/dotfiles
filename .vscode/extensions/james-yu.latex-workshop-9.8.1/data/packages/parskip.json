@@ -1,0 +1,16 @@
+{
+  "includes": {},
+  "cmds": {},
+  "envs": {},
+  "options": [
+    "skip",
+    "skip=",
+    "tocskip",
+    "tocskip=",
+    "indent",
+    "indent=",
+    "parfill",
+    "parfill="
+  ],
+  "keyvals": []
+}

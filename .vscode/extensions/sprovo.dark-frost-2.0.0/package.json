@@ -1,0 +1,51 @@
+{
+	"name": "dark-frost",
+	"displayName": "Dark Frost",
+	"description": "A theme inspired by the colours of Atlantic Canada in the winter.",
+	"publisher": "sprovo",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sandricoprovo/dark-frost-vscode-theme"
+	},
+	"version": "2.0.0",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"keywords": [
+		"VSCode",
+		"Themes"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Dark Frost",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark-Frost-color-theme.json"
+			},
+			{
+				"label": "Dark Frost Atlantic Midnight",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark-Frost-Midnight-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "5ff96381-978b-4634-8457-6cc5cd3669f0",
+		"publisherId": "b4a81d10-bd90-449e-8c04-fd27e92b28c7",
+		"publisherDisplayName": "Sandrico Provo",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1679908460239,
+		"preRelease": false
+	}
+}

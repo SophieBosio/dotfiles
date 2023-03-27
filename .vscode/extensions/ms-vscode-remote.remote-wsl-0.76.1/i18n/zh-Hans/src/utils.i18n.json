@@ -1,0 +1,1 @@
+{"executeCommand.noWSL":"找不到 wsl 命令\r\n\r\n请确保已安装 WSL: \r\nhttps://aka.ms/vscode-remote/wsl/install-wsl","isWSLInstalled.exeNotFound":"找不到 \\\"{0}\\\"","isWSLInstalled.noSystemRoot":"未定义环境变量 \\\"SystemRoot\\\"","download.failed":"无法从 {0}: HTTP {1} - {2} 下载 VS Code 服务器","download.checksumMismatch":"下载校验和不匹配。"}

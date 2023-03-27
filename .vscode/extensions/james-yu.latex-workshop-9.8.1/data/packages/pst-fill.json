@@ -1,0 +1,20 @@
+{
+  "includes": {
+    "pstricks": [],
+    "pst-xkey": []
+  },
+  "cmds": {
+    "psboxfill{}": {
+      "snippet": "psboxfill{${1:stuff}}"
+    },
+    "PstTiling": {},
+    "txfillDict": {},
+    "pstFillSetDefaults": {},
+    "PSTboxfillLoaded": {}
+  },
+  "envs": {},
+  "options": [
+    "tiling"
+  ],
+  "keyvals": []
+}

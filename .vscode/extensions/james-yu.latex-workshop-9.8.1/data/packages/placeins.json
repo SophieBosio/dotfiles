@@ -1,0 +1,14 @@
+{
+  "includes": {},
+  "cmds": {
+    "FloatBarrier": {}
+  },
+  "envs": {},
+  "options": [
+    "section",
+    "above",
+    "below",
+    "verbose"
+  ],
+  "keyvals": []
+}

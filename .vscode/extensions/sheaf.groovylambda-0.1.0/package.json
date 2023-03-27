@@ -1,0 +1,37 @@
+{
+	"name": "groovylambda",
+	"displayName": "Groovy Lambda",
+	"description": "Color theme optimised for Haskell, based on Gruvbox Material.",
+	"publisher": "sheaf",
+	"version": "0.1.0",
+	"homepage": "https://github.com/sheaf/groovy-lambda",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sheaf/groovy-lambda.git"
+	},
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Groovy Lambda",
+				"uiTheme": "vs-dark",
+				"path": "./themes/GroovyLambda-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "9c2a03bc-121d-4d6e-9faa-28565598e5af",
+		"publisherId": "bfa415ca-db41-41aa-a954-61ae9176946a",
+		"publisherDisplayName": "sheaf",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1668762223631
+	}
+}
