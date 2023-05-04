@@ -1,2 +1,0 @@
-(()=>{"use strict";var r={26188:(r,e)=>{Object.defineProperty(e,"__esModule",{value:!0}),r.exports=class{onRunStart(r){process.stderr.write(`onRunStart: numTotalTestSuites: ${r.numTotalTestSuites}\r\n`)}onRunComplete(r,e){e.runExecError?process.stderr.write(`onRunComplete: execError: ${e.runExecError.message}\r\n`):process.stderr.write("onRunComplete\r\n")}getLastError(){}}}},e={},t=function t(o){var s=e[o];if(void 0!==s)return s.exports;var n=e[o]={exports:{}};return r[o](n,n.exports,t),n.exports}(26188);module.exports=t})();
-//# sourceMappingURL=reporter.js.map

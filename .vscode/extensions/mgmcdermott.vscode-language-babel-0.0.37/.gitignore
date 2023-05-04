@@ -1,9 +1,0 @@
-.vscode/*
-.vscode-test-web/*
-!.vscode/tasks.json
-!.vscode/launch.json
-.DS_Store
-.vimrc
-tags
-node_modules
-dist
