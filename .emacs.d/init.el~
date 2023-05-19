@@ -8,7 +8,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("1cae4424345f7fe5225724301ef1a793e610ae5a4e23c023076dc334a9eb940a" "1a1ac598737d0fcdc4dfab3af3d6f46ab2d5048b8e72bc22f50271fd6d393a00" "5f128efd37c6a87cd4ad8e8b7f2afaba425425524a68133ac0efd87291d05874" "3fe1ebb870cc8a28e69763dde7b08c0f6b7e71cc310ffc3394622e5df6e4f0da" "7a424478cb77a96af2c0f50cfb4e2a88647b3ccca225f8c650ed45b7f50d9525" "8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a" "512ce140ea9c1521ccaceaa0e73e2487e2d3826cc9d287275550b47c04072bc4" "2f8eadc12bf60b581674a41ddc319a40ed373dd4a7c577933acaff15d2bf7cc6" "adaf421037f4ae6725aa9f5654a2ed49e2cd2765f71e19a7d26a454491b486eb" "51c71bb27bdab69b505d9bf71c99864051b37ac3de531d91fdad1598ad247138" "9d29a302302cce971d988eb51bd17c1d2be6cd68305710446f658958c0640f68" "e7ba99d0f4c93b9c5ca0a3f795c155fa29361927cadb99cfce301caf96055dfd" "4ff1c4d05adad3de88da16bd2e857f8374f26f9063b2d77d38d14686e3868d8d" "56044c5a9cc45b6ec45c0eb28df100d3f0a576f18eef33ff8ff5d32bac2d9700" "bf948e3f55a8cd1f420373410911d0a50be5a04a8886cabe8d8e471ad8fdba8e" "b9761a2e568bee658e0ff723dd620d844172943eb5ec4053e2b199c59e0bcc22" default))
+   '("7e068da4ba88162324d9773ec066d93c447c76e9f4ae711ddd0c5d3863489c52" "de8f2d8b64627535871495d6fe65b7d0070c4a1eb51550ce258cd240ff9394b0" "e7820b899036ae7e966dcaaec29fd6b87aef253748b7de09e74fdc54407a7a02" "1cae4424345f7fe5225724301ef1a793e610ae5a4e23c023076dc334a9eb940a" "1a1ac598737d0fcdc4dfab3af3d6f46ab2d5048b8e72bc22f50271fd6d393a00" "5f128efd37c6a87cd4ad8e8b7f2afaba425425524a68133ac0efd87291d05874" "3fe1ebb870cc8a28e69763dde7b08c0f6b7e71cc310ffc3394622e5df6e4f0da" "7a424478cb77a96af2c0f50cfb4e2a88647b3ccca225f8c650ed45b7f50d9525" "8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a" "512ce140ea9c1521ccaceaa0e73e2487e2d3826cc9d287275550b47c04072bc4" "2f8eadc12bf60b581674a41ddc319a40ed373dd4a7c577933acaff15d2bf7cc6" "adaf421037f4ae6725aa9f5654a2ed49e2cd2765f71e19a7d26a454491b486eb" "51c71bb27bdab69b505d9bf71c99864051b37ac3de531d91fdad1598ad247138" "9d29a302302cce971d988eb51bd17c1d2be6cd68305710446f658958c0640f68" "e7ba99d0f4c93b9c5ca0a3f795c155fa29361927cadb99cfce301caf96055dfd" "4ff1c4d05adad3de88da16bd2e857f8374f26f9063b2d77d38d14686e3868d8d" "56044c5a9cc45b6ec45c0eb28df100d3f0a576f18eef33ff8ff5d32bac2d9700" "bf948e3f55a8cd1f420373410911d0a50be5a04a8886cabe8d8e471ad8fdba8e" "b9761a2e568bee658e0ff723dd620d844172943eb5ec4053e2b199c59e0bcc22" default))
  '(global-writeroom-mode t nil (writeroom-mode))
  '(mini-frame-show-parameters '((top . 10) (width . 0.4) (left . 0.5)))
  '(package-archives
@@ -17,7 +17,7 @@
      ("elpa" . "https://elpa.gnu.org/packages/")
      ("melpa-stable" . "http://stable.melpa.org/packages/")))
  '(package-selected-packages
-   '(ivy-posframe ivy-fuz mini-frame topspace writeroom-mode forge magit visual-fill-column org-present smooth-scrolling ligature twilight-theme lua-mode a haskell-mode all-the-icons-completion dap-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode all-the-icons-ivy which-key doom-modeline all-the-icons doom-themes use-package auto-package-update))
+   '(org-bullets nano-modeline nano-theme svg-tag-mode ivy-posframe ivy-fuz mini-frame topspace writeroom-mode forge magit visual-fill-column org-present smooth-scrolling ligature twilight-theme lua-mode a haskell-mode all-the-icons-completion dap-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode all-the-icons-ivy which-key doom-modeline all-the-icons doom-themes use-package auto-package-update))
  '(writeroom-header-line t)
  '(writeroom-mode-line t))
 (custom-set-faces
@@ -72,7 +72,10 @@
   (auto-package-update-maybe)
   (auto-package-update-at-time "09:00"))
 
-
+;; Local extensions
+;; (add-to-list 'load-path "~/.emacs.d/local-extensions/")
+(let ((default-directory "~/.emacs.d/local-extensions/"))
+  (normal-top-level-add-subdirs-to-load-path))
 
 ;; Appearance & UI -------------------------------------------------------------
 (defvar efs/default-font-size          102)
@@ -81,7 +84,7 @@
 ;; Add small margin around the edges of the frame
 (add-to-list 'default-frame-alist '(internal-border-width . 22))
 
-;; TODO: Add small gap between modeline and text
+;; TODO Add small gap between modeline and text
 
 ;; Toggle transparency with C-c t
 (defun toggle-transparency ()
@@ -114,23 +117,20 @@
 
 ;; Maximise by default
 (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
-(add-to-list 'default-frame-alist  '(fullscreen . maximized))
+(add-to-list 'default-frame-alist     '(fullscreen . maximized))
+(add-hook 'window-setup-hook          'toggle-frame-fullscreen t)  ;; Open in fullscreen, aka F11
 
 
 ;; Theme
-(use-package doom-themes
-  :init (load-theme 'doom-miramare))
-
-;; Cycle through themes
-(defun cycle-themes ()
-  "Returns a function that lets you cycle your themes."
-  (let ((themes '(doom-miraware doom-flatwhite doom-nord doom-opera)))
-    (lambda ()
-      (interactive)
-      ;; Rotates the theme cycle and changes the current theme.
-      (let ((rotated (nconc (cdr themes) (list (car themes)))))
-        (load-theme (car (setq themes rotated)) t))
-      (message (concat "Switched to " (symbol-name (car themes)))))))
+(require 'doom-themes)
+(load-theme 'doom-nord-light)
+;; Nice themes include:
+;; - doom-miramare
+;; - doom-flatwhite
+;; - doom-nord
+;; - doom-nord-light
+;; - doom-nord-aurora
+;; - nano-light / -dark
 
 ;; Font
 (set-face-attribute 'default nil :font "JetBrainsMono Nerd Font Mono" :height efs/default-font-size)
@@ -161,8 +161,6 @@
                                        ("phi" . ?φ)
                                        ("psi" . ?ψ)))
 
-;; TODO: highlight TODO, FIXME, etc.
-
 ;; Column and line numbers
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
@@ -173,39 +171,43 @@
 (setq display-time-default-load-average nil)
 
 ;; Modeline
-(use-package all-the-icons)
-(use-package doom-modeline
-  :init (doom-modeline-mode 1))
-(setq doom-modeline-bar-width 6           ;; bar width
-      doom-modeline-height 30             ;; modeline height
-      ;; doom-modeline-major-mode-icon nil   ;; remove major mode icon
-      doom-modeline-buffer-state-icon nil ;; remove buffer state icon
-      doom-modeline-buffer-modification-icon nil ;; remove buffer modification icon
-      doom-modeline-buffer-encoding nil   ;; remove buffer encoding
-      doom-modeline-time-icon nil         ;; remove time icon - only want actual time
-      doom-modeline-time t                ;; time, but only if 'display-time-mode' is used!
-      doom-modeline-battery t             ;; battery, but only if 'display-battery-mode' is used!
-      doom-modeline-buffer-file-name-style 'file-name ;; display file name, not entire path
-      )
+(require 'all-the-icons)
+(nano-modeline-mode 1)
+(setq nano-modeline-space-top      +0.60  ;; More modeline space above the ml text
+      nano-modeline-space-bottom   -0.60  ;; More modeline space below the ml text
+      nano-modeline-prefix         'icon  ;; I want icons, not RW/RO signifiers
+      nano-modeline-prefix-padding t)     ;; Ensure padding between prefix and text
+;; TODO Time, battery, column number in mode line
+
+;; (use-package all-the-icons)
+;; (use-package doom-modeline
+;;   :init (doom-modeline-mode 1))
+;; (setq doom-modeline-bar-width 6           ;; bar width
+;;       doom-modeline-height 30             ;; modeline height
+;;       doom-modeline-buffer-state-icon nil ;; remove buffer state icon
+;;       doom-modeline-buffer-modification-icon nil ;; remove buffer modification icon
+;;       doom-modeline-buffer-encoding nil   ;; remove buffer encoding
+;;       doom-modeline-time-icon nil         ;; remove time icon - only want actual time
+;;       doom-modeline-time t                ;; time, but only if 'display-time-mode' is used!
+;;       doom-modeline-battery t             ;; battery, but only if 'display-battery-mode' is used!
+;;       doom-modeline-buffer-file-name-style 'file-name ;; display file name, not entire path
+;;       )
 
 ;; Put modeline in the header instead of the default, in the footer
-(add-to-list 'load-path  "~/.emacs.d/elpa/mode-line-in-header/")
-(require 'mode-line-in-header)
-(global-mode-line-in-header 1)
-
-;; Display mini-buffer as separate child frame
-;; Maybe use ivy-posframe instead?
-;; (mini-frame-mode 1)
+;; (add-to-list 'load-path  "~/.emacs.d/elpa/mode-line-in-header/")
+;; (require 'mode-line-in-header)
+;; (global-mode-line-in-header 1)
 
 ;; Display minibuffer as separate frame, in conjunction with Ivy
 (require 'ivy-posframe)
 ;; display at `ivy-posframe-style'
 (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display)))
-;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-center)))
-(setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-center)))
-;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-bottom-left)))
-;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-bottom-left)))
-;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-top-center)))
+(setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-center)))
+;;(setq ivy-posframe-height ivy-height)      ;; Maintain the height given by ivy
+(setq ivy-posframe-border-width 0)         ;; No border please
+(setq ivy-posframe-width 80)
+;; (setq ivy-posframe-min-width 80)
+;; (setq ivy-posframe-max-width 80)
 (ivy-posframe-mode 1)
 
 ;; Make symlinks show up as their actual filename
@@ -250,6 +252,8 @@
          ("C-d" . ivy-reverse-i-search-kill))
   :config
   (ivy-mode 1))
+
+(setq ivy-height 25)
 
 ;; Ivy Rich
 (use-package ivy-rich
@@ -460,3 +464,89 @@
   (visual-fill-line-mode t))
 
 (add-hook 'org-mode-hook 'my/org-mode-visual-style)
+
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+;; Other visual effects --------------------------------------------------------
+(pdf-loader-install)
+(add-hook 'pdf-view-mode-hook
+          (lambda () (setq header-line-format nil)))
+
+;; Beautify my tags!
+(require 'svg-tag-mode)
+(defconst date-re "[0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}")
+(defconst time-re "[0-9]\\{2\\}:[0-9]\\{2\\}")
+(defconst day-re "[A-Za-z]\\{3\\}")
+(defconst day-time-re (format "\\(%s\\)? ?\\(%s\\)?" day-re time-re))
+(defun svg-progress-percent (value)
+  (svg-image (svg-lib-concat
+              (svg-lib-progress-bar (/ (string-to-number value) 100.0)
+                                nil :margin 0 :stroke 2 :radius 3 :padding 2 :width 11)
+              (svg-lib-tag (concat value "%")
+                           nil :stroke 0 :margin 0)) :ascent 'center))
+(defun svg-progress-count (value)
+  (let* ((seq (mapcar #'string-to-number (split-string value "/")))
+         (count (float (car seq)))
+         (total (float (cadr seq))))
+  (svg-image (svg-lib-concat
+              (svg-lib-progress-bar (/ count total) nil
+                                    :margin 0 :stroke 2 :radius 3 :padding 2 :width 11)
+              (svg-lib-tag value nil
+                           :stroke 0 :margin 0)) :ascent 'center)))
+(setq svg-tag-tags
+      `(
+        ;; Org tags
+        (":\\([A-Za-z0-9]+\\)" . ((lambda (tag) (svg-tag-make tag))))
+        (":\\([A-Za-z0-9]+[ \-]\\)" . ((lambda (tag) tag)))
+        
+        ;; Task priority
+        ("\\[#[A-Z]\\]" . ( (lambda (tag)
+                              (svg-tag-make tag :face 'org-priority 
+                                            :beg 2 :end -1 :margin 0))))
+
+        ;; Progress
+        ("\\(\\[[0-9]\\{1,3\\}%\\]\\)" . ((lambda (tag)
+                                            (svg-progress-percent (substring tag 1 -2)))))
+        ("\\(\\[[0-9]+/[0-9]+\\]\\)" . ((lambda (tag)
+                                          (svg-progress-count (substring tag 1 -1)))))
+        
+        ;; TODO / DONE
+        ("TODO" . ((lambda (tag) (svg-tag-make "TODO" :face 'org-todo :inverse t :margin 0))))
+        ("DONE" . ((lambda (tag) (svg-tag-make "DONE" :face 'org-done :margin 0))))
+
+
+        ;; Citation of the form [cite:@Knuth:1984] 
+        ("\\(\\[cite:@[A-Za-z]+:\\)" . ((lambda (tag)
+                                          (svg-tag-make tag
+                                                        :inverse t
+                                                        :beg 7 :end -1
+                                                        :crop-right t))))
+        ("\\[cite:@[A-Za-z]+:\\([0-9]+\\]\\)" . ((lambda (tag)
+                                                (svg-tag-make tag
+                                                              :end -1
+                                                              :crop-left t))))
+
+        
+        ;; Active date (with or without day name, with or without time)
+        (,(format "\\(<%s>\\)" date-re) .
+         ((lambda (tag)
+            (svg-tag-make tag :beg 1 :end -1 :margin 0))))
+        (,(format "\\(<%s \\)%s>" date-re day-time-re) .
+         ((lambda (tag)
+            (svg-tag-make tag :beg 1 :inverse nil :crop-right t :margin 0))))
+        (,(format "<%s \\(%s>\\)" date-re day-time-re) .
+         ((lambda (tag)
+            (svg-tag-make tag :end -1 :inverse t :crop-left t :margin 0))))
+
+        ;; Inactive date  (with or without day name, with or without time)
+         (,(format "\\(\\[%s\\]\\)" date-re) .
+          ((lambda (tag)
+             (svg-tag-make tag :beg 1 :end -1 :margin 0 :face 'org-date))))
+         (,(format "\\(\\[%s \\)%s\\]" date-re day-time-re) .
+          ((lambda (tag)
+             (svg-tag-make tag :beg 1 :inverse nil :crop-right t :margin 0 :face 'org-date))))
+         (,(format "\\[%s \\(%s\\]\\)" date-re day-time-re) .
+          ((lambda (tag)
+             (svg-tag-make tag :end -1 :inverse t :crop-left t :margin 0 :face 'org-date))))))
+(global-svg-tag-mode t)
