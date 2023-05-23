@@ -31,3 +31,21 @@ cd local-extensions
 ls
 cd nano-modeline
 git checkout -b sophie-custom
+ls
+stack exec ghci
+sghci
+ghci
+stack build
+stack exec ghci
+bash --version
+exit
+cd OneDrive/Obsidian/thesis/kodesnutter/ls
+cd OneDrive/Obsidian/thesis/kodesnutter/
+ls 
+stack new quickcheck-experiments
+cd quickcheck-experiments/
+ls 
+clear 
+stack exec ghci
+exit
+stack exec ghci

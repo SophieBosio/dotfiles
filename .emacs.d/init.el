@@ -1,6 +1,5 @@
 ;; -*- lexical-binding: t; -*-
 
-
 ;; Custom variables ------------------------------------------------------------
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -8,7 +7,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("7e068da4ba88162324d9773ec066d93c447c76e9f4ae711ddd0c5d3863489c52" "de8f2d8b64627535871495d6fe65b7d0070c4a1eb51550ce258cd240ff9394b0" "e7820b899036ae7e966dcaaec29fd6b87aef253748b7de09e74fdc54407a7a02" "1cae4424345f7fe5225724301ef1a793e610ae5a4e23c023076dc334a9eb940a" "1a1ac598737d0fcdc4dfab3af3d6f46ab2d5048b8e72bc22f50271fd6d393a00" "5f128efd37c6a87cd4ad8e8b7f2afaba425425524a68133ac0efd87291d05874" "3fe1ebb870cc8a28e69763dde7b08c0f6b7e71cc310ffc3394622e5df6e4f0da" "7a424478cb77a96af2c0f50cfb4e2a88647b3ccca225f8c650ed45b7f50d9525" "8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a" "512ce140ea9c1521ccaceaa0e73e2487e2d3826cc9d287275550b47c04072bc4" "2f8eadc12bf60b581674a41ddc319a40ed373dd4a7c577933acaff15d2bf7cc6" "adaf421037f4ae6725aa9f5654a2ed49e2cd2765f71e19a7d26a454491b486eb" "51c71bb27bdab69b505d9bf71c99864051b37ac3de531d91fdad1598ad247138" "9d29a302302cce971d988eb51bd17c1d2be6cd68305710446f658958c0640f68" "e7ba99d0f4c93b9c5ca0a3f795c155fa29361927cadb99cfce301caf96055dfd" "4ff1c4d05adad3de88da16bd2e857f8374f26f9063b2d77d38d14686e3868d8d" "56044c5a9cc45b6ec45c0eb28df100d3f0a576f18eef33ff8ff5d32bac2d9700" "bf948e3f55a8cd1f420373410911d0a50be5a04a8886cabe8d8e471ad8fdba8e" "b9761a2e568bee658e0ff723dd620d844172943eb5ec4053e2b199c59e0bcc22" default))
+   '("7ea883b13485f175d3075c72fceab701b5bf76b2076f024da50dff4107d0db25" "7e068da4ba88162324d9773ec066d93c447c76e9f4ae711ddd0c5d3863489c52" "de8f2d8b64627535871495d6fe65b7d0070c4a1eb51550ce258cd240ff9394b0" "e7820b899036ae7e966dcaaec29fd6b87aef253748b7de09e74fdc54407a7a02" "1cae4424345f7fe5225724301ef1a793e610ae5a4e23c023076dc334a9eb940a" "1a1ac598737d0fcdc4dfab3af3d6f46ab2d5048b8e72bc22f50271fd6d393a00" "5f128efd37c6a87cd4ad8e8b7f2afaba425425524a68133ac0efd87291d05874" "3fe1ebb870cc8a28e69763dde7b08c0f6b7e71cc310ffc3394622e5df6e4f0da" "7a424478cb77a96af2c0f50cfb4e2a88647b3ccca225f8c650ed45b7f50d9525" "8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a" "512ce140ea9c1521ccaceaa0e73e2487e2d3826cc9d287275550b47c04072bc4" "2f8eadc12bf60b581674a41ddc319a40ed373dd4a7c577933acaff15d2bf7cc6" "adaf421037f4ae6725aa9f5654a2ed49e2cd2765f71e19a7d26a454491b486eb" "51c71bb27bdab69b505d9bf71c99864051b37ac3de531d91fdad1598ad247138" "9d29a302302cce971d988eb51bd17c1d2be6cd68305710446f658958c0640f68" "e7ba99d0f4c93b9c5ca0a3f795c155fa29361927cadb99cfce301caf96055dfd" "4ff1c4d05adad3de88da16bd2e857f8374f26f9063b2d77d38d14686e3868d8d" "56044c5a9cc45b6ec45c0eb28df100d3f0a576f18eef33ff8ff5d32bac2d9700" "bf948e3f55a8cd1f420373410911d0a50be5a04a8886cabe8d8e471ad8fdba8e" "b9761a2e568bee658e0ff723dd620d844172943eb5ec4053e2b199c59e0bcc22" default))
  '(global-writeroom-mode t nil (writeroom-mode))
  '(mini-frame-show-parameters '((top . 10) (width . 0.4) (left . 0.5)))
  '(package-archives
@@ -17,7 +16,7 @@
      ("elpa" . "https://elpa.gnu.org/packages/")
      ("melpa-stable" . "http://stable.melpa.org/packages/")))
  '(package-selected-packages
-   '(nerd-icons-ivy-rich org-bullets nano-modeline nano-theme svg-tag-mode ivy-posframe ivy-fuz mini-frame topspace writeroom-mode forge magit visual-fill-column org-present smooth-scrolling ligature twilight-theme lua-mode a haskell-mode all-the-icons-completion dap-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode all-the-icons-ivy which-key doom-modeline all-the-icons doom-themes use-package auto-package-update))
+   '(company treemacs-nerd-icons olivetti nerd-icons-ivy-rich org-bullets nano-modeline nano-theme svg-tag-mode ivy-posframe ivy-fuz mini-frame topspace writeroom-mode forge magit visual-fill-column org-present smooth-scrolling ligature twilight-theme lua-mode a haskell-mode all-the-icons-completion dap-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode all-the-icons-ivy which-key doom-modeline all-the-icons doom-themes use-package auto-package-update))
  '(writeroom-header-line t)
  '(writeroom-mode-line t))
 (custom-set-faces
@@ -84,8 +83,6 @@
 ;; Add small margin around the edges of the frame
 (add-to-list 'default-frame-alist '(internal-border-width . 22))
 
-;; TODO Add small gap between modeline and text
-
 ;; Toggle transparency with C-c t
 (defun toggle-transparency ()
   (interactive)
@@ -103,10 +100,14 @@
 ;; Declutter
 (setq inhibit-startup-message t
       initial-scratch-message nil)
-(scroll-bar-mode               -1)
-(tool-bar-mode                 -1)
-(menu-bar-mode                 -1)
 (set-fringe-mode               10)
+
+(dolist (mode
+    '(tool-bar-mode        ;; Remove toolbar
+      scroll-bar-mode      ;; Remove scollbars
+      menu-bar-mode        ;; Remove menu bar
+      blink-cursor-mode))  ;; Solid cursor, not blinking
+    (funcall mode 0))
 
 ;; Smoother scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
@@ -123,7 +124,7 @@
 
 ;; Theme
 (require 'doom-themes)
-(load-theme 'doom-nord-light)
+(load-theme 'doom-nord)
 ;; Nice themes include:
 ;; - doom-miramare
 ;; - doom-flatwhite
@@ -135,7 +136,7 @@
 ;; Font
 (set-face-attribute 'default nil :font "JetBrainsMono Nerd Font Mono" :height efs/default-font-size)
 (set-face-attribute 'fixed-pitch nil :font "JetBrainsMono Nerd Font Mono" :height efs/default-font-size)
-(set-face-attribute 'variable-pitch nil :font "Iosevka Aile" :height efs/default-variable-font-size)
+(set-face-attribute 'variable-pitch nil :font "Segoe UI" :height efs/default-variable-font-size)
 
 ;; Font ligatures
 (defvar ligatures-JetBrainsMono
@@ -206,9 +207,9 @@
 (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-center)))
 ;;(setq ivy-posframe-height ivy-height)      ;; Maintain the height given by ivy
 (setq ivy-posframe-border-width 0)         ;; No border please
-(setq ivy-posframe-width 80)
+(setq ivy-posframe-width 85)
 ;; (setq ivy-posframe-min-width 80)
-;; (setq ivy-posframe-max-width 80)
+;; (setq ivy-posframe-max-width 100)
 (ivy-posframe-mode 1)
 
 ;; Make symlinks show up as their actual filename
@@ -217,16 +218,21 @@
 ;; Break lines
 (global-visual-line-mode 1)
 
-;; Center text
-(with-eval-after-load 'olivetti
-  (setq-default olivetti-body-width (+ fill-column 3))
-  (remove-hook 'olivetti-mode-on-hook 'visual-line-mode))
+;; Center text by default with Olivetti
+(require 'olivetti)
+(setq-default olivetti-body-width (+ fill-column 5))
+(olivetti-mode 1)
+(global-set-key (kbd "C-c C-o") 'olivetti-mode)
 
 ;; Writeroom mode
 (use-package writeroom-mode)
 
 
-;; Interaction Tools -----------------------------------------------------------
+;; Interaction -----------------------------------------------------------------
+
+;; Autosave file
+(setq global-auto-save-visited-mode 1)
+
 ;; Which key
 (use-package which-key
   :defer 0
@@ -257,10 +263,11 @@
 (setq ivy-height 25)
 
 ;; Ivy Rich
-(use-package ivy-rich
-  :after ivy
-  :init
-  (ivy-rich-mode 1))
+;; (use-package ivy-rich
+;;   :after ivy
+;;   :init
+;;   (ivy-rich-mode 1))
+;; (setq ivy-rich-path-style 'abbrev)
 
 ;; Counsel
 (use-package counsel
@@ -305,7 +312,19 @@
  ([remap describe-variable] . counsel-describe-variable)
  ([remap describe-key] . helpful-key))
 
-;; TODO: Better code & text autocompletion
+;; Auto-completion with company-mode
+(require 'company)
+(setq company-idle-delay 0
+      company-echo-delay 0
+      company-dabbrev-downcase nil
+      company-minimum-prefix-length 2
+      company-selection-wrap-around t
+      company-transformers '(company-sort-by-occurrence
+                             company-sort-by-backend-importance))
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; File tree view with treemacs
+(global-set-key (kbd "C-c C-t") 'treemacs)
 
 
 ;; Git -------------------------------------------------------------------------
@@ -389,10 +408,64 @@
 ;; Auto-pair brackets
 (electric-pair-mode t)
 
-;; TODO:  Shift-tab to undo indentation
+;; Change ctrl + backspace behaviour to calm it down
+(defun custom/backward-kill-word ()
+  "Remove all whitespace if the character behind the cursor is whitespace, otherwise remove a word."
+  (interactive)
+  (if (looking-back "[ \n]")
+      ;; delete horizontal space behind us and then check to see if we
+      ;; are looking at a newline
+      (progn (delete-horizontal-space 't)
+             (while (looking-back "[ \n]")
+               (backward-delete-char 1)))
+    ;; otherwise, just do the normal kill word.
+    (custom/delete-dont-kill 1)))
+;; Delete a word without adding it to the kill ring
+(defun custom/delete-dont-kill (arg)
+  "Delete characters backward until encountering the beginning of a word.
+With argument ARG, do this that many times.
+Don't kill, just delete."
+  (interactive "p")
+  (delete-region (point) (progn (backward-word arg) (point))))
+(global-set-key [C-backspace] 'custom/backward-kill-word)
 
-;; TODO: Change ctrl + backspace behaviour to calm it down
 
+;; Sane tab/indentation behaviour ----------------------------------------------
+;; Create a variable for our preferred tab width
+(setq custom-tab-width 2)
+
+;; Two callable functions for enabling/disabling tabs in Emacs
+(defun disable-tabs () (setq indent-tabs-mode nil))
+(defun enable-tabs  ()
+  (local-set-key (kbd "TAB") 'tab-to-tab-stop)
+  (setq indent-tabs-mode t)
+  (setq tab-width custom-tab-width))
+
+;; Hooks to Enable Tabs
+(add-hook 'prog-mode-hook 'enable-tabs)
+;; Hooks to Disable Tabs
+(add-hook 'lisp-mode-hook 'disable-tabs)
+(add-hook 'emacs-lisp-mode-hook 'disable-tabs)
+
+;; Language-Specific Tweaks
+(setq-default python-indent-offset custom-tab-width) ;; Python
+(setq-default js-indent-level custom-tab-width)      ;; Javascript
+
+;; Inhibit electric indent mode when changing to new major mode
+(add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
+
+;; Make the backspace properly erase the tab instead of
+;; removing 1 space at a time.
+(setq backward-delete-char-untabify-method 'hungry)
+
+;;Visualize tabs as a pipe character - "|"
+;; This will also show trailing characters as they are useful to spot.
+(setq whitespace-style '(face tabs tab-mark trailing))
+(custom-set-faces
+ '(whitespace-tab ((t (:foreground "#636363")))))
+(setq whitespace-display-mappings
+  '((tab-mark 9 [124 9] [92 9]))) ; 124 is the ascii ID for '\|'
+(global-whitespace-mode) ; Enable whitespace mode everywhere
 
 ;; Presentations ---------------------------------------------------------------
 (unless (package-installed-p 'org-present)
@@ -437,10 +510,10 @@
                 (org-level-6 . 1.0)
                 (org-level-7 . 1.0)
                 (org-level-8 . 1.0)))
-  (set-face-attribute (car face) nil :font "Iosevka Aile" :weight 'medium :height (cdr face)))
+  (set-face-attribute (car face) nil :font "Segoe UI" :weight 'medium :height (cdr face)))
 
 ;; Make the document title a bit bigger
-(set-face-attribute 'org-document-title nil :font "Iosevka Aile" :weight 'bold :height 1.85)
+(set-face-attribute 'org-document-title nil :font "Segoe UI" :weight 'bold :height 1.85)
 
 ;; Make sure certain org faces use the fixed-pitch face when variable-pitch-mode is on
 (set-face-attribute 'org-block nil :foreground nil :inherit 'fixed-pitch)
@@ -455,37 +528,33 @@
 (unless (package-installed-p 'visual-fill-column)
   (package-install 'visual-fill-column))
 
-;; Center text
-(setq visual-fill-column-width 110
-      visual-fill-column-center-text t)
-
 ;; Enable text centering and line breaks for Org Mode
-(defun my/org-mode-visual-style ()
-  (visual-fill-column-mode t)
-  (visual-fill-line-mode t))
+;; (defun my/org-mode-visual-style ()
+;;   (visual-fill-column-mode t)
+;;   (visual-fill-line-mode t))
 
-(add-hook 'org-mode-hook 'my/org-mode-visual-style)
+;; (add-hook 'org-mode-hook 'my/org-mode-visual-style)
 
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;; Other visual effects --------------------------------------------------------
-(pdf-loader-install)
-(add-hook 'pdf-view-mode-hook
-          (lambda () (setq header-line-format nil)))
 
-;; Beautify my tags!
+;; Prettify my tags with svg-tag-mode!
 (require 'svg-tag-mode)
+
 (defconst date-re "[0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}")
 (defconst time-re "[0-9]\\{2\\}:[0-9]\\{2\\}")
 (defconst day-re "[A-Za-z]\\{3\\}")
 (defconst day-time-re (format "\\(%s\\)? ?\\(%s\\)?" day-re time-re))
+
 (defun svg-progress-percent (value)
   (svg-image (svg-lib-concat
               (svg-lib-progress-bar (/ (string-to-number value) 100.0)
                                 nil :margin 0 :stroke 2 :radius 3 :padding 2 :width 11)
               (svg-lib-tag (concat value "%")
                            nil :stroke 0 :margin 0)) :ascent 'center))
+
 (defun svg-progress-count (value)
   (let* ((seq (mapcar #'string-to-number (split-string value "/")))
          (count (float (car seq)))
@@ -495,6 +564,7 @@
                                     :margin 0 :stroke 2 :radius 3 :padding 2 :width 11)
               (svg-lib-tag value nil
                            :stroke 0 :margin 0)) :ascent 'center)))
+
 (setq svg-tag-tags
       `(
         ;; Org tags
@@ -550,4 +620,5 @@
          (,(format "\\[%s \\(%s\\]\\)" date-re day-time-re) .
           ((lambda (tag)
              (svg-tag-make tag :end -1 :inverse t :crop-left t :margin 0 :face 'org-date))))))
+
 (global-svg-tag-mode t)
