@@ -1,0 +1,23 @@
+"background": "#282726",
+"foreground": "#DCDFE4",
+"cursorColor": "#DBD7CC",
+"selectionBackground": "#DDCC92",
+
+"brightBlack": "#ADACB4",
+"brightBlue": "#A0D9EF",
+"brightCyan": "#89B482",
+"brightGreen": "#A6C389",
+"brightPurple": "#A199EB",
+"brightRed": "#E06C75",
+"brightWhite": "#DCDFE4",
+"brightYellow": "#F7D79A",
+
+"black": "#282C34",
+"blue": "#85B5E8",
+"cyan": "#7CAB93",
+"green": "#84B787",
+"name": "Vinyl",
+"purple": "#859BFF",
+"red": "#C9696B",
+"white": "#DBD7CC",
+"yellow": "#E8C67D"

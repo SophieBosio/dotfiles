@@ -1,0 +1,82 @@
+MainWindowBackground = #000000
+EscToExit = false
+ReuseInstance = false
+UseSysColors = false
+RestoreSession = true
+TabWidth = 300
+
+# Dark theme:
+FixedPageUI [
+	TextColor = #1e1d1d
+	BackgroundColor = #ffe6bc
+	SelectionColor = #eabe56
+	WindowMargin = 2 4 2 4
+	PageSpacing = 4 4
+	HideScrollbars = true
+]
+
+# Light theme:
+FixedPageUI [
+	TextColor = #1e1d1d
+	BackgroundColor = #ead4bb
+	SelectionColor = #eabe56
+	WindowMargin = 2 4 2 4
+	PageSpacing = 4 4
+	HideScrollbars = true
+]
+
+EbookUI [
+	FontName = Georgia
+	FontSize = 12.5
+	TextColor = #5f4b32
+	BackgroundColor = #fbf0d9
+	UseFixedPageUI = false
+]
+ComicBookUI [
+	WindowMargin = 0 0 0 0
+	PageSpacing = 4 4
+	CbxMangaMode = false
+]
+ChmUI [
+	UseFixedPageUI = false
+]
+ExternalViewers [
+]
+ShowMenubar = true
+ReloadModifiedDocuments = true
+FullPathInTitle = false
+ZoomLevels = 8.33 12.5 18 25 33.33 50 66.67 75 100 125 150 200 300 400 600 800 1000 1200 1600 2000 2400 3200 4800 6400
+ZoomIncrement = 0
+
+PrinterDefaults [
+	PrintScale = shrink
+]
+ForwardSearch [
+	HighlightOffset = 0
+	HighlightWidth = 15
+	HighlightColor = #6581ff
+	HighlightPermanent = false
+]
+Annotations [
+	HighlightColor = #ffff00
+]
+CustomScreenDPI = 0
+
+RememberStatePerDocument = true
+UiLanguage = en
+ShowToolbar = true
+ShowFavorites = false
+AssociateSilently = false
+CheckForUpdates = true
+RememberOpenedFiles = true
+EnableTeXEnhancements = false
+DefaultDisplayMode = automatic
+DefaultZoom = fit page
+WindowState = 2
+WindowPos = -8 0 976 1088
+ShowToc = true
+SidebarDx = 480
+TocDy = 0
+TreeFontSize = 0
+ShowStartPage = true
+UseTabs = true
