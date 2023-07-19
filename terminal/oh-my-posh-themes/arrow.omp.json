@@ -24,9 +24,9 @@
             "type": "git"
         },
         {
-          "foreground": "#FFE082",
+          "foreground": "#81cc8b",
           "style": "plain",
-          "template": " \u279E ",
+          "template": " \u279C",
           "type": "text"
         }
       ],
