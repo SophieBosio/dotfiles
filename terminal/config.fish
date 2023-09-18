@@ -2,8 +2,17 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# Set up user's bins
+fish_add_path /home/sophie/.local/bin
+
 # Inhibit startup message
 set -U fish_greeting ""
+
+# Shorthand for "ls -A"
+alias l='ls -A'
+
+# Shorthand for committing with git
+alias gac='git add . && git commit -m '
 
 # Configuration for vterm
 function vterm_printf;
@@ -33,3 +42,6 @@ fish_add_path /usr/local/texlive/2023/bin/x86_64-linux
 
 # python is alias for python3
 alias python='python3'
+
+# opam configuration
+source /home/sophie/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
