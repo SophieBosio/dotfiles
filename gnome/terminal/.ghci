@@ -1,0 +1,4 @@
+# file path: ~/.ghci
+
+:set prompt " λ ~ "
+:def hoogle \x -> return $ ":!hoogle " ++ x

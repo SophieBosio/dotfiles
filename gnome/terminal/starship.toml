@@ -1,0 +1,13 @@
+# file path: ~/.config/starship.toml
+
+add_newline = false
+format = "$directory$git_branch[➜](fg:#81cc8b) "
+
+[directory]
+style = "fg:#9BD1E5"
+truncate_to_repo = true
+truncation_length = 100
+
+[git_branch]
+format = "[($branch)]($style) "
+style = "fg:#C2F8FF"
