@@ -52,3 +52,5 @@ source /home/sophie/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 # Idris2
 fish_add_path /home/sophie/.idris2/bin
 
+# zoxide
+zoxide init fish | source
