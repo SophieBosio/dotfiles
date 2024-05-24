@@ -1,0 +1,11 @@
+add_newline = false
+format = "$directory$git_branch[➜](fg:#499789) "
+
+[directory]
+style             = "fg:#1D5AB5"
+truncate_to_repo  = true
+truncation_length = 100
+
+[git_branch]
+format = "[($branch)]($style) "
+style  = "fg:#499789"

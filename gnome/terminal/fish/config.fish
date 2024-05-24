@@ -1,11 +1,10 @@
-# file path: ~/.config/fish/config.fish
-
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
 # Set up user's bins
 fish_add_path /home/sophie/.local/bin
+fish_add_path /usr/local/bin
 
 # Inhibit startup message
 set -U fish_greeting ""
@@ -32,7 +31,6 @@ end
 # Starship prompt
 starship init fish | source
 
-
 # GHCup for Haskell
 set -U fish_user_paths $HOME/sophie/.ghcup/env $fish_user_paths
 fish_add_path /home/sophie/.ghcup/bin
@@ -41,7 +39,12 @@ fish_add_path /home/sophie/.ghcup/bin
 alias ghci='stack exec ghci -- -W'
 
 # TeX Live
-fish_add_path /usr/local/texlive/2023/bin/x86_64-linux
+# fish_add_path /usr/local/texlive/2023/bin/x86_64-linux
+fish_add_path /usr/local/texlive/2024/bin/x86_64-linux
+
+# Python
+set -g PYTHONPATH /usr/bin/python3
+fish_add_path $PYTHONPATH
 
 # python is alias for python3
 alias python='python3'
