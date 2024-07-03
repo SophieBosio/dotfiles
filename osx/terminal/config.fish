@@ -10,7 +10,7 @@ fish_add_path /usr/bin
 # Inhibit startup message
 set -U fish_greeting ""
 
-# Shorthand for "ls -A"
+# Aliases
 alias la='ls -A'
 
 # Configuration for vterm
@@ -32,7 +32,7 @@ set -x EDITOR emacs
 # LLVM
 fish_add_path /opt/homebrew/opt/llvm/bin
 
-# GHCuo for Haskell on Mac
+# GHCup for Haskell on Mac
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /Users/Sophie/.ghcup/bin
 
 # Run GHCi with stack
