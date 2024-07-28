@@ -17,12 +17,12 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_LINUX_ALPHA] = LAYOUT_split_3x6_3(
-		NO_PLUS, NO_Q, NO_J, NO_K, NO_Y, NO_W,	NO_G, NO_B, NO_F, NO_AE, NO_OSTR, NO_ARNG,
+		NO_PLUS, NO_Q, NO_J, NO_K, NO_Y, NO_W,	NO_G, NO_P, NO_N, NO_AE, NO_OSTR, NO_ARNG,
 
 		         // Super      // Alt/Meta   // Ctrl       // Shift
-		NO_MINS, LGUI_T(NO_U), LALT_T(NO_T), LCTL_T(NO_A), LSFT_T(NO_E), NO_D,	NO_R, RSFT_T(NO_I), LCTL_T(NO_O), LALT_T(NO_S), LGUI_T(NO_H), NO_QUOT,
+		NO_MINS, LGUI_T(NO_U), LALT_T(NO_T), LCTL_T(NO_A), LSFT_T(NO_E), NO_D,	NO_O, RSFT_T(NO_R), LCTL_T(NO_I), LALT_T(NO_S), LGUI_T(NO_L), NO_QUOT,
 
-		NO_UNDS, NO_Z, NO_X, NO_C, NO_V, NO_M,	NO_L, NO_P, NO_N, NO_COMM, NO_DOT, NO_MINS,
+		NO_UNDS, NO_Z, NO_X, NO_C, NO_V, NO_M,	NO_H, NO_B, NO_F, NO_COMM, NO_DOT, NO_MINS,
 		
 		CTL_T(KC_LGUI), LT(_LINUX_NAV, KC_BSPC), ALT_T(KC_TAB),   CTL_T(KC_ENT), LT(_LINUX_SYMBOL, KC_SPC), ALT_T(KC_ESC)
     ),
@@ -48,12 +48,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 	[_MAC_ALPHA] = LAYOUT_split_3x6_3(
-		NO_PLUS, NO_Q, NO_J, NO_K, NO_Y, NO_W,	NO_G, NO_B, NO_F, NO_AE, NO_OSTR, NO_ARNG,
+		NO_PLUS, NO_Q, NO_J, NO_K, NO_Y, NO_W,	NO_G, NO_P, NO_N, NO_AE, NO_OSTR, NO_ARNG,
 
 		         // Option ⌥   // Command ⌘  // Control ^  // Shift ⇧
-		NO_MINS, LALT_T(NO_U), LGUI_T(NO_T), LCTL_T(NO_A), LSFT_T(NO_E), NO_D,	NO_R, RSFT_T(NO_I), LCTL_T(NO_O), LALT_T(NO_S), LGUI_T(NO_H), NO_QUOT,
+		NO_MINS, LALT_T(NO_U), LGUI_T(NO_T), LCTL_T(NO_A), LSFT_T(NO_E), NO_D,	NO_O, RSFT_T(NO_R), LCTL_T(NO_I), LGUI_T(NO_S), LALT_T(NO_L), NO_QUOT,
 
-		NO_UNDS, NO_Z, NO_X, NO_C, NO_V, NO_M,	NO_L, NO_P, NO_N, NO_COMM, NO_DOT, NO_MINS,
+		NO_UNDS, NO_Z, NO_X, NO_C, NO_V, NO_M,	NO_H, NO_B, NO_F, NO_COMM, NO_DOT, NO_MINS,
 		
 		// Control ^                           // Command ⌘     // Control ^                            // Command ⌘
 		CTL_T(KC_LGUI), LT(_MAC_NAV, KC_BSPC), GUI_T(KC_TAB),   CTL_T(KC_ENT), LT(_MAC_SYMBOL, KC_SPC), GUI_T(KC_ESC)
